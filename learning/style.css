@@ -46,6 +46,10 @@ header {
   color: #0d0d0d;
 }
 
+#nav-sp, #menu-sp {
+  display: none;
+}
+
 /* メインビジュアル */
 #main-visual {
   position: relative;
@@ -478,4 +482,58 @@ footer {
 }
 #sns > a {
   margin-right: 30px;
+}
+/* メインビジュアル */
+#main-visual {
+  position: relative;
+  height: 470px;
+  width: 100%;
+  overflow: hidden;
+}
+#main-visual > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #2710d5;
+  color: white;
+  border-radius: 0 0 476px 0;
+  text-align: center;
+  height: 280px;
+  width: 100%;
+  z-index: 11;
+}
+#main-visual > div > h1 {
+  font-size: 28px;
+  margin-top: 90px;
+}
+#main-visual > div > p {
+  margin: 0;
+}
+#main-visual > img {
+  width: 100%;
+  border-radius: 476px 0 0 0;
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* 見出し */
+h2::after {
+  content: url("images/line.png");
+  margin-left: 10px;
+}
+h3 {
+  font-size: 24px;
+  margin: 10px 0 0 0;
+}
+
+/* ミッション */
+#mission {
+  margin: 20px;
+}
+#mission-photo {
+  width: 100%;
+}
+#s2dgs {
+  width: 100%;
 }
